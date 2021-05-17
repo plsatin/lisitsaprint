@@ -1,0 +1,40 @@
+    <div class="ae-container-fluid ae-container-fluid--inner rk-main">
+      <div class="ae-grid">
+        <div class="ae-grid__item item-lg-6 item-lg--offset-7">
+          <h4 class="ae-u-bolder au-mb-3 conatct__title">Оставить заявку</h4>
+          <p class="au-mb-4 contact__desc">Заполните следующие поля и мы обязательно свяжемся с вами в ближайшее время. </p>
+        </div>
+      </div>
+      <div class="ae-grid">
+        <div class="ae-grid__item item-lg-6">
+          <div class="ae-grid ae-grid--collapse">
+            <div class="ae-grid__item item-lg-12 contact-form">
+              <form method="POST" action="" id="contact-form" name="contact-form" class="ae-form--full">
+                <input id="contactName" name="contactName" type="text" placeholder="* Имя" required>
+                <input id="contactEmail" name="contactEmail" type="email" placeholder="* Email" required>
+                <input id="contactSubject" name="contactSubject" type="hidden" name="contactSubject" placeholder="Тема сообщения..." value="!Заявка с сайта - ({{ @site }})!">
+                <textarea id="contactMessage" name="contactMessage" placeholder="Сообщение ..." cols="30" rows="4"></textarea>
+                <div id="messageWarning"></div>
+                <p class="au-xs-ta-right au-pt-4 group-buttons"><button type="submit" class="arrow-button arrow-button--right arrow-button--out">Отправить<span class="arrow-cont">
+                      <svg>
+                        <use xlink:href="assets/img/symbols.svg#arrow"></use>
+                      </svg></span></a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="ae-grid__item item-lg-6">
+          <div class="ae-grid ae-grid--collapse">
+            <div class="ae-grid__item item-lg-2 au-v-hidden au-lg-v-visible">
+              <button id="map-arrow" class="arrow-button arrow-button--nospace arrow-button--center arrow-button--flip">
+                <svg>
+                  <use xlink:href="assets/img/symbols.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="ae-grid__item item-lg-10 au-xs-ta-center au-lg-ta-left">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

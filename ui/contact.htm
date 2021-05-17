@@ -1,0 +1,77 @@
+<style>
+    #map-container {
+        width: 100%;
+        height: 0;
+        margin: 0 auto;
+        padding-top: 134.74026%;
+        position: relative;
+    }
+
+    #map {
+        width: 100%;
+        height: 100%;
+        /* had to specify height/width */
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+</style>
+
+
+<div class="ae-container-fluid ae-container-fluid--inner rk-main">
+    <div class="ae-grid">
+        <div class="ae-grid__item item-lg-6">
+            <div id="map-container">
+                <div id="map" class="map"></div>
+            </div>
+        </div>
+        <div class="ae-grid__item item-lg-6">
+            <div class="ae-grid ae-grid--collapse">
+                <div class="ae-grid__item item-lg-2 au-v-hidden au-lg-v-visible">
+                    <button id="map-arrow"
+                        class="arrow-button arrow-button--nospace arrow-button--center arrow-button--flip">
+                        <svg>
+                            <use xlink:href="assets/img/symbols.svg#arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="ae-grid__item item-lg-10 au-xs-ta-center au-lg-ta-left">
+                    <h4 class="ae-u-bolder au-mb-3 conatct__title">Как нас найти</h4>
+                    <p class="au-mb-4 contact__addr">{{ @company.address }}</p>
+                    <p> <span class="contact__phone"> <span class="rk-light-color">Телефон: </span> <a
+                                href="tel:{{ @company.phone }}">
+                                {{ @company.phone }}
+                            </a></span><br><span class="contact__email au-block au-truncate"> <span
+                                class="rk-light-color">Email: &nbsp;&nbsp; </span><a
+                                href="mailto:{{ @company.email }}" class="rk-dark-color ">
+                                {{ @company.email }}
+                            </a></span></p>
+                </div>
+                <div class="contact_spacer au-none au-lg-block"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Заказ -->
+<div class="ae-grid ae-grid--collapse au-xs-ptp-1 au-xs-pbp-1">
+    <div class="ae-grid__item item-lg-8 item-lg--offset-2 au-xs-ta-center">
+        <blockquote>
+            <span style="font-style: italic">
+                Хотите заказать? Оставте заявку, мы свяжемся с вами в ближайшее время.
+            </span>
+        </blockquote>
+        <div class="group-buttons"><a href="{{ @BASE }}/order?frompage=contact"
+                class="au-mt-2 arrow-button arrow-button--right">Оставить заявку<span class="arrow-cont">
+                    <svg>
+                        <use xlink:href="assets/img/symbols.svg#arrow"></use>
+                    </svg></span></a>
+        </div>
+    </div>
+</div>
+<!-- Заказ -->

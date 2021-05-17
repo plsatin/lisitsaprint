@@ -1,0 +1,28 @@
+<div class="ae-container-fluid ae-container-fluid--inner rk-main">
+    <div class="ae-grid au-pt-2">
+        <div class="ae-grid__item item-lg-10 item-lg--offset-1">
+
+            <h4 class="ae-u-bolder">{{ @ERROR.code }}</h4>
+            <p>{{ @ERROR.status }}</p>
+            <check if="{{ @ERROR.code==404 }}">
+                <true>
+                    <p>There is no page at this address. This may be due to a broken link, a page that no longer exists,
+                        or you may have typed the address incorrectly.</p>
+                    <p>You might find what you are looking for in one of the pages above.</p>
+                </true>
+                <false>
+                    <p>Something went terribly wrong, but please stay calm. We'll get the following error fixed as soon
+                        as possible.</p>
+                    <p><small>{{ @ERROR.text }}</small></p>
+                </false>
+            </check>
+
+        </div>
+        <p class="au-flex au-pt-4 group-buttons"><a href="{{ @BASE }}"
+                class="au-mt-4 arrow-button arrow-button--right arrow-button--out">Наша продукция<span
+                    class="arrow-cont"><svg>
+                        <use xlink:href="assets/img/symbols.svg#arrow"></use>
+                    </svg></span></a>
+        </p>
+    </div>
+</div>

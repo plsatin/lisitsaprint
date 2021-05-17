@@ -1,0 +1,8 @@
+^tmp/
+^.idea/
+Thumbs.db
+^.vscode/
+^.hgignore
+^.gitignore
+^.git/
+^notes.md

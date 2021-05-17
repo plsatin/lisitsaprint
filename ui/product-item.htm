@@ -1,0 +1,41 @@
+<section class="ae-container-fluid ae-container-fluid--full">
+    <header class="rk-portfolio-cover item-inside-{{ @product->id }}">
+        <div class="item-inside__meta">
+            <h1 class="ae-u-bolder rk-portfolio-title ">{{ @product->title }}</h1>
+            <!-- <p class="ae-theta rk-portfolio-category "><?php echo $summary; ?></p> -->
+        </div>
+    </header>
+    <div class="ae-grid ae-grid--collapse au-xs-ptp-1 au-xs-pbp-1">
+        <div class="ae-grid__item item-lg-8 item-lg--offset-2">
+            <!-- <h4 class="ae-u-bolder"><?php echo $title; ?></h4> -->
+            <p class="ae-eta">{{ @product->article_html | raw }}</p>
+            <p class="ae-eta">{{ @product->details_html | raw }}</p>
+            <p class="ae-eta">{{ @product->imgs_html | raw }}</p>
+        </div>
+    </div>
+    <!-- Заказ -->
+    <div class="ae-grid ae-grid--collapse au-xs-ptp-1 au-xs-pbp-1">
+        <div class="ae-grid__item item-lg-8 item-lg--offset-2 au-xs-ta-center">
+            <blockquote>
+                <span style="font-style: italic">
+                    Хотите заказать? Оставте заявку, мы свяжемся с вами в ближайшее время.
+                </span>
+            </blockquote>
+            <div class="group-buttons"><a href="order?productid={{ @product->id }}"
+                    class="au-mt-2 arrow-button arrow-button--right">Оставить заявку<span class="arrow-cont">
+                        <svg>
+                            <use xlink:href="assets/img/symbols.svg#arrow"></use>
+                        </svg></span></a>
+            </div>
+        </div>
+    </div>
+    <!-- Заказ -->
+    <div class="ae-container-fluid au-pt-4 au-pb-4">
+        <div class="group-buttons"><a href="product?id={{ @product->id+1 }}"
+                class="au-mt-2 arrow-button arrow-button--right">Следующий вид продукции<span class="arrow-cont">
+                    <svg>
+                        <use xlink:href="assets/img/symbols.svg#arrow"></use>
+                    </svg></span></a>
+        </div>
+    </div>
+</section>

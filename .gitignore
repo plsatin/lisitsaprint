@@ -1,0 +1,7 @@
+/tmp/
+/.idea/
+app/config.ini
+.hg
+^.vscode/
+^.hgignore
+/notes.md

@@ -1,0 +1,39 @@
+<div class="ae-container-fluid ae-container-fluid--inner rk-main">
+    <div class="ae-grid au-pt-2">
+        <div class="ae-grid__item item-lg-10 item-lg--offset-1">
+            <h4 class="ae-u-bolder"></h4>
+            <p>{{ @company.info | raw }}</p>
+        </div>
+        <p class="au-flex au-pt-4 group-buttons"><a href="{{ @BASE }}/products"
+                class="au-mt-4 arrow-button arrow-button--right arrow-button--out">Наша продукция<span
+                    class="arrow-cont"><svg>
+                        <use xlink:href="assets/img/symbols.svg#arrow"></use>
+                    </svg></span></a>
+        </p>
+        <div class="ae-grid__item item-lg-10 item-lg--offset-1">
+            <h4 class="ae-u-bolder"></h4>
+            <p>{{ @company.info2 | raw }}</p>
+        </div>
+    </div>
+    <p class="au-flex au-pt-4 group-buttons"><a href="{{ @BASE }}/services"
+            class="au-mt-4 arrow-button arrow-button--right arrow-button--out">Наши услуги<span class="arrow-cont"><svg>
+                    <use xlink:href="assets/img/symbols.svg#arrow"></use>
+                </svg></span></a>
+    </p>
+    <h3 class="ae-u-bolder">Наша команда:</h3>
+    <div class="ae-grid au-xs-ta-center au-mb-4">
+
+        <repeat group="{{ @contacts }}" value="{{ @contact }}">
+            <check if="{{ @contact.contact_type == 1 }}">
+                <div class="ae-grid__item item-lg-3 ae-kappa au-mb-3"><img src="{{ @contact.image_path }}" alt=""
+                        class="au-mb-3">
+                    <h5 class="ae-u-bolder au-mt-2">{{ @contact.name }}</h5>
+                    <p class="ae-u-bolder au-mb-3">{{ @contact.info | raw }}</p>
+                    <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">{{ @contact.info2 | raw }}</p><a
+                        class="ae-u-bolder au-underline" href="mailto:{{ @contact.email }}">{{ @contact.email }}</a>
+                </div>
+            </check>
+        </repeat>
+
+    </div>
+</div>
