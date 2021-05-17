@@ -45,7 +45,7 @@ class Utils extends Controller {
 
     function order($f3) {
 
-        $f3->set('menuactive', 'services');
+        $f3->set('menuactive', 'contact');
         $f3->set('inc','order.htm');
     }
 
@@ -62,6 +62,8 @@ class Utils extends Controller {
         
         if($_POST) {
 
+            $db=$this->db;
+
             // Переменная emailTo перенесена в config.ini
             // $emailTo = '2260056@sale-ekb.com';
             // $emailTo = 'pslater.ru@gmail.com';
@@ -76,7 +78,9 @@ class Utils extends Controller {
             $array['email'] = $clientEmail;
             $array['subject'] = $subject;
             $array['message'] = $message;
-        
+
+            // print_r($array);
+
             if($clientName == '') {
                 $array['name'] = 'Пожалуйста введите свое имя.';
             }
@@ -88,21 +92,30 @@ class Utils extends Controller {
             }
             if($clientName != '' && Utils::isEmail($clientEmail) && $message != '') {
                 // Send email
-            $headers = "From: " . $clientName . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
+                $headers = "From: " . $clientName . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
 
-            mail($emailTo, $subject, $message, $headers);
+                // mail($emailTo, $subject, $message, $headers);
 
-            // $message2db = new Message;
-            // $message2db->msg_date = date("Y-m-d H:i:s");
-            // $message2db->msg_email = $clientEmail;
-            // $message2db->msg_name = $clientName;
-            // $message2db->msg_message = $message;
-            // $message2db->msg_title = $subject;
-            // $message2db->insert();
-        
-        
+                // $smtp = new SMTP ( 'localhost', 25, 'SSL', '', '' );
+
+                // $smtp->set('From', '"2260056" <2260056@sale-ekb.com>');
+                // $smtp->set('To', '<pslater.ru@gmail.com>');
+                // $smtp->set('Subject', $subject);  
+                // $smtp->set('Errors-to', '<pslater.ru@gmail.com>');  
+
+
+                // $sent = $smtp->send($message, TRUE);
+                // $mylog = $smtp->log();
+                // echo $mylog;
+
+
+                $db->begin();
+                $db->exec('INSERT INTO messages (msg_date, msg_email, msg_name, msg_message, msg_title) VALUES ("'. date("Y-m-d H:i:s") .'","' . $clientEmail .'","' . $clientName .'","' . $message .'","' . $subject . '")');
+
+                $db->commit();
+
             }
-        
+            // echo $mylog;
             echo json_encode($array);
 
         }

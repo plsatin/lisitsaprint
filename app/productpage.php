@@ -20,7 +20,8 @@ class ProductPage extends Controller {
         else {
             $product->copyto('product');
             $f3->set('product', $product);
-
+            $f3->set('sitekeywords', $product->keywords);
+            $f3->set('sitedescription', $product->description);
             $f3->set('menuactive', 'products');
             $f3->set('inc','product-item.htm');
         }

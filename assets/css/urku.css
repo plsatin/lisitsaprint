@@ -1166,7 +1166,7 @@ body {
 }
 
 .item-1 {
-    background-image: url("../img/new/vcards.jpg");
+    background-image: url("../img/products/vcards.jpg");
 }
 @media (min-width: 40em) {
   #layout-grid:checked ~ .rk-portfolio .item-1 {
@@ -1175,23 +1175,23 @@ body {
 }
 
 .item-2 {
-    background-image: url("../img/new/booklets.jpg");
+    background-image: url("../img/products/booklets.jpg");
 }
 
 .item-3 {
-    background-image: url("../img/new/books.jpg");
+    background-image: url("../img/products/books.jpg");
 }
 
 .item-4 {
-    background-image: url("../img/new/pens.jpg");
+    background-image: url("../img/products/pens.jpg");
 }
 
 .item-5 {
-    background-image: url("../img/new/journals.jpg");
+    background-image: url("../img/products/journals.jpg");
 }
 
 .item-6 {
-    background-image: url("../img/new/catalogs.jpg");
+    background-image: url("../img/products/catalogs.jpg");
 }
 @media (min-width: 40em) {
   #layout-grid:checked ~ .rk-portfolio .item-6 {
@@ -1200,19 +1200,19 @@ body {
 }
 
 .item-7 {
-    background-image: url("../img/new/brochures.jpg");
+    background-image: url("../img/products/brochures.jpg");
 }
 
 .item-8 {
-    background-image: url("../img/new/leaflets.jpg");
+    background-image: url("../img/products/leaflets.jpg");
 }
 
 .item-9 {
-    background-image: url("../img/new/posters.jpg");
+    background-image: url("../img/products/posters.jpg");
 }
 
 .item-10 {
-    background-image: url("../img/new/folders.jpg");
+    background-image: url("../img/products/folders.jpg");
 }
 @media (min-width: 40em) {
   #layout-grid:checked ~ .rk-portfolio .item-10 {
@@ -1221,7 +1221,7 @@ body {
 }
 
 .item-11 {
-    background-image: url("../img/new/paperbags.jpg");
+    background-image: url("../img/products/paperbags.jpg");
 }
 @media (min-width: 40em) {
   #layout-grid:checked ~ .rk-portfolio .item-11 {
@@ -1231,11 +1231,11 @@ body {
 
 
 .item-12 {
-    background-image: url("../img/new/pocketcalendar.jpg");
+    background-image: url("../img/products/pocketcalendar.jpg");
 }
 
 .item-13 {
-    background-image: url("../img/new/deskcalendar.jpg");
+    background-image: url("../img/products/deskcalendar.jpg");
 }
 @media (min-width: 40em) {
   #layout-grid:checked ~ .rk-portfolio .item-13 {
@@ -1243,7 +1243,7 @@ body {
   }
 }
 .item-15 {
-    background-image: url("../img/new/souvenirproducts.jpg");
+    background-image: url("../img/products/souvenirproducts.jpg");
 }
 
 @media (min-width: 40em) {
@@ -1256,11 +1256,11 @@ body {
 }
 
 .item-14 {
-    background-image: url("../img/new/notebooks.jpg");
+    background-image: url("../img/products/notebooks.jpg");
 }
 
 .item-16 {
-    background-image: url("../img/new/envelopes.jpg");
+    background-image: url("../img/products/envelopes.jpg");
 }
 
 .item-s-1 {
@@ -1395,7 +1395,7 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: screen;
 
-    background-image: url("../img/new/vcards.jpg");
+    background-image: url("../img/products/vcards.jpg");
   background-position: 50% 100%;
 }
 .item-inside-2 {
@@ -1405,7 +1405,7 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: screen;
 
-    background-image: url("../img/new/booklets.jpg");
+    background-image: url("../img/products/booklets.jpg");
   background-position: 50% 100%;
 
 }
@@ -1416,7 +1416,7 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: screen;
 
-   background-image: url("../img/new/books.jpg");
+   background-image: url("../img/products/books.jpg");
   background-position: 50% 100%;
 }
 .item-inside-4 {
@@ -1426,7 +1426,7 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: screen;
 
-    background-image: url("../img/new/pens.jpg");
+    background-image: url("../img/products/pens.jpg");
   background-position: 50% 100%;
 }
 .item-inside-5 {
@@ -1436,7 +1436,7 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: screen;
 
-    background-image: url("../img/new/journals.jpg");
+    background-image: url("../img/products/journals.jpg");
   background-position: 50% 100%;
 }
 .item-inside-6 {
@@ -1446,7 +1446,7 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: screen;
 
-    background-image: url("../img/new/catalogs.jpg");
+    background-image: url("../img/products/catalogs.jpg");
   background-position: 50% 100%;
 }
 .item-inside-7 {
@@ -1456,7 +1456,7 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: screen;
 
-    background-image: url("../img/new/brochures.jpg");
+    background-image: url("../img/products/brochures.jpg");
   background-position: 50% 100%;
 }
 .item-inside-8 {
@@ -1466,7 +1466,7 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: screen;
 
-    background-image: url("../img/new/leaflets.jpg");
+    background-image: url("../img/products/leaflets.jpg");
   background-position: 50% 100%;
 }
 .item-inside-9 {
@@ -1476,7 +1476,7 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: screen;
 
-    background-image: url("../img/new/posters.jpg");
+    background-image: url("../img/products/posters.jpg");
   background-position: 50% 100%;
 }
 .item-inside-10 {
@@ -1486,7 +1486,7 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: screen;
 
-    background-image: url("../img/new/folders.jpg");
+    background-image: url("../img/products/folders.jpg");
   background-position: 50% 100%;
 }
 .item-inside-11 {
@@ -1496,7 +1496,7 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: screen;
 
-    background-image: url("../img/new/paperbags.jpg");
+    background-image: url("../img/products/paperbags.jpg");
   background-position: 50% 100%;
 }
 .item-inside-12 {
@@ -1506,7 +1506,7 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: screen;
 
-    background-image: url("../img/new/pocketcalendar.jpg");
+    background-image: url("../img/products/pocketcalendar.jpg");
   background-position: 50% 100%;
 }
 .item-inside-13 {
@@ -1516,7 +1516,7 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: screen;
 
-    background-image: url("../img/new/deskcalendar.jpg");
+    background-image: url("../img/products/deskcalendar.jpg");
   background-position: 50% 100%;
 }
 .item-inside-15 {
@@ -1526,7 +1526,7 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: screen;
 
-    background-image: url("../img/new/souvenirproducts.jpg");
+    background-image: url("../img/products/souvenirproducts.jpg");
   background-position: 50% 100%;
 }
 .item-inside-14 {
@@ -1536,7 +1536,7 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: screen;
 
-    background-image: url("../img/new/notebooks.jpg");
+    background-image: url("../img/products/notebooks.jpg");
   background-position: 50% 100%;
 }
 .item-inside-16 {
@@ -1546,59 +1546,59 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: screen;
 
-    background-image: url("../img/new/envelopes.jpg");
+    background-image: url("../img/products/envelopes.jpg");
   background-position: 50% 100%;
 }
 
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
   .item-inside-1 {
-    background-image: url("../img/new/vcards.jpg");
+    background-image: url("../img/products/vcards.jpg");
   }
   .item-inside-2 {
-    background-image: url("../img/new/booklets.jpg");
+    background-image: url("../img/products/booklets.jpg");
   }
   .item-inside-3 {
-    background-image: url("../img/new/books.jpg");
+    background-image: url("../img/products/books.jpg");
   }
   .item-inside-4 {
-    background-image: url("../img/new/pens.jpg");
+    background-image: url("../img/products/pens.jpg");
   }
   .item-inside-5 {
-    background-image: url("../img/new/journals.jpg");
+    background-image: url("../img/products/journals.jpg");
   }
   .item-inside-6 {
-    background-image: url("../img/new/catalogs.jpg");
+    background-image: url("../img/products/catalogs.jpg");
   }
   .item-inside-7 {
-    background-image: url("../img/new/brochures.jpg");
+    background-image: url("../img/products/brochures.jpg");
   }
   .item-inside-8 {
-    background-image: url("../img/new/leaflets.jpg");
+    background-image: url("../img/products/leaflets.jpg");
   }
   .item-inside-9 {
-    background-image: url("../img/new/posters.jpg");
+    background-image: url("../img/products/posters.jpg");
   }
   .item-inside-10 {
-    background-image: url("../img/new/folders.jpg");
+    background-image: url("../img/products/folders.jpg");
   }
   .item-inside-11 {
-    background-image: url("../img/new/paperbags.jpg");
+    background-image: url("../img/products/paperbags.jpg");
   }
   .item-inside-12 {
-    background-image: url("../img/new/pocketcalendar.jpg");
+    background-image: url("../img/products/pocketcalendar.jpg");
   }
   .item-inside-13 {
-    background-image: url("../img/new/deskcalendar.jpg");
+    background-image: url("../img/products/deskcalendar.jpg");
   }
   .item-inside-15 {
-    background-image: url("../img/new/souvenirproducts.jpg");
+    background-image: url("../img/products/souvenirproducts.jpg");
   }
   .item-inside-14 {
-    background-image: url("../img/new/notebooks.jpg");
+    background-image: url("../img/products/notebooks.jpg");
   }
   .item-inside-16 {
-    background-image: url("../img/new/envelopes.jpg");
+    background-image: url("../img/products/envelopes.jpg");
   }
 
 }

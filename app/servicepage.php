@@ -31,7 +31,8 @@ class ServicePage extends Controller {
         else {
             $product->copyto('service');
             $f3->set('service', $product);
-
+            $f3->set('sitekeywords', $product->keywords);
+            $f3->set('sitedescription', $product->description);
             $f3->set('menuactive', 'services');
             $f3->set('inc','service-item.htm');
         }

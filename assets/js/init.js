@@ -31,7 +31,7 @@ jQuery(document).ready(function() {
         var postdata = $('.contact-form form').serialize();
         $.ajax({
             type: 'POST',
-            url: 'sendEmail',
+            url: '/sendEmail',
             data: postdata,
             dataType: 'json',
             success: function(json) {
