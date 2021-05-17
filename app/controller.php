@@ -28,6 +28,8 @@ class Controller {
     function __construct() {
         $f3=Base::instance();
         // Connect to the database
+        // for sqlite
+        // $db=new DB\SQL($f3->get('db'));
         $db=new DB\SQL($f3->get('db'), $f3->get('dbuser'), $f3->get('dbpassword'));
         if (file_exists('setup.sql')) {
             // Initialize database with default setup
