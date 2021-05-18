@@ -43,6 +43,14 @@ class Utils extends Controller {
 
     }
 
+    function privacypolicy($f3) {
+        $file = F3::instance()->read('privacypolicy.md');
+        $html = Markdown::instance()->convert($file);
+        $f3->set('content', $html);
+        $f3->set('inc','article.htm');
+
+    }
+
     function order($f3) {
 
         $f3->set('menuactive', 'contact');
