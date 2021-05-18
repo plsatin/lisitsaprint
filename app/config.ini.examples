@@ -8,6 +8,8 @@ db="sqlite:db/db.sqlite"
 
 sitekeywords=""
 sitedescription=""
+siteimage=""
+siteurl="https://lisitsaprint.ru"
 
 emailTo = "admin@example.com"
 
