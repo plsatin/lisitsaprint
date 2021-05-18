@@ -30,6 +30,7 @@
         </div>
     </div>
     <!-- Заказ -->
+    <check if="{{ @product->id <= 15 }}">
     <div class="ae-container-fluid au-pt-4 au-pb-4">
         <div class="group-buttons"><a href="product?id={{ @product->id+1 }}"
                 class="au-mt-2 arrow-button arrow-button--right">Следующий<span class="arrow-cont">
@@ -38,4 +39,5 @@
                     </svg></span></a>
         </div>
     </div>
+    </check>
 </section>
