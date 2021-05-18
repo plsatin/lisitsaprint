@@ -9,8 +9,7 @@ db="sqlite:db/db.sqlite"
 sitekeywords=""
 sitedescription=""
 
-; emailTo = "2260056@sale-ekb.com"
-emailTo = "pslater.ru@gmail.com"
+emailTo = "admin@example.com"
 
 ; How timestamps look like on the pages
 time_format="d M Y h:ia"
