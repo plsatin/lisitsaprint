@@ -35,21 +35,21 @@ jQuery(document).ready(function() {
             data: postdata,
             dataType: 'json',
             success: function(json) {
-                if(json.name != '') {
-                    $('.contact-form form #messageWarning').append(' - <span class="violet" style="font-size: 13px; font-style: italic"> ' + json.name + '</span>');
-                }
-                if(json.email != '') {
-                    $('.contact-form form #messageWarning').append(' - <span class="violet" style="font-size: 13px; font-style: italic"> ' + json.email + '</span>');
-                }
-                if(json.message != '') {
-                    $('.contact-form form #messageWarning').append('<code><h4 class="ae-u-bolder"><span style="font-style: italic"> ' + json.message + '</span></h4></code>');
-                }
-                if(json.name == '' && json.email == '' && json.message == '') {
+                if(json.result == 'success') {
                     $('.contact-form form').fadeOut('fast', function() {
                         $('.contact-form').append('<p><span class="violet">Спасибо, что написали нам!</span> В ближайшее время мы свяжемся с вами.</p>');
                     });
+
                 }
+                if(json.result == 'failure') {
+                    $('.contact-form form #messageWarning').append(' - <span class="violet" style="font-size: 13px; font-style: italic"> ' + json.name + '</span>');
+                    $('.contact-form form #messageWarning').append(' - <span class="violet" style="font-size: 13px; font-style: italic"> ' + json.email + '</span>');
+                    $('.contact-form form #messageWarning').append('<code><h4 class="ae-u-bolder"><span style="font-style: italic"> ' + json.message + '</span></h4></code>');
+
+                }
+
             }
+
         });
         return false;
     });
