@@ -18,21 +18,23 @@ class ServicePage extends Controller {
 
     function service($f3,$args) {
         $db=$this->db;
-        $product=new DB\SQL\Mapper($db,'services');
+        $service=new DB\SQL\Mapper($db,'services');
         // $id=empty($args['id'])?'':$args['id'];
         $id=($f3->get('GET.id')?:'');
         // $id=$f3->get('PARAMS.id');
-        $product->load(array('id=?',$id));
+        $service->load(array('id=?',$id));
 
-        if ($product->dry()) {
+        if ($service->dry()) {
             $f3->error(404);
             die;
         }
         else {
-            $product->copyto('service');
-            $f3->set('service', $product);
-            $f3->set('sitekeywords', $product->keywords);
-            $f3->set('sitedescription', $product->description);
+            $service->copyto('service');
+            $f3->set('service', $service);
+            $f3->set('pagetitle', $service->title);
+            $f3->set('pageimage', $service->image_path);
+            $f3->set('pagekeywords', $service->keywords);
+            $f3->set('pagedescription', $service->description);
             $f3->set('menuactive', 'services');
             $f3->set('inc','service-item.htm');
         }

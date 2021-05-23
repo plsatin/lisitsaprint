@@ -24,25 +24,26 @@
     <div class="ae-grid au-xs-ta-center au-mb-4">
 
         <repeat group="{{ @contacts }}" value="{{ @contact }}">
-            <check if="{{ @contact.contact_type == 1 }}">
-                <div class="ae-grid__item item-lg-3 ae-kappa au-mb-3"><img src="{{ @contact.image_path }}" alt=""
-                        class="au-mb-3">
-                    <h5 class="ae-u-bolder au-mt-2">{{ @contact.name }}</h5>
-                    <p class="ae-u-bolder au-mb-3">{{ @contact.info | raw }}</p>
-                    <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">{{ @contact.info2 | raw }}</p><a
-                        class="ae-u-bolder au-underline" href="mailto:{{ @contact.email }}">{{ @contact.email }}</a>
-                </div>
-            </check>
+        <check if="{{ @contact.contact_type == 1 }}">
+            <div class="ae-grid__item item-lg-3 ae-kappa au-mb-3"><img src="{{ @contact.image_path }}" alt=""
+                    class="au-mb-3">
+                <h5 class="ae-u-bolder au-mt-2">{{ @contact.name }}</h5>
+                <p class="ae-u-bolder au-mb-3">{{ @contact.info | raw }}</p>
+                <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">{{ @contact.info2 | raw }}</p><a
+                    class="ae-u-bolder au-underline" href="mailto:{{ @contact.email }}">{{ @contact.email }}</a>
+            </div>
+        </check>
         </repeat>
 
     </div>
 
-    <div class="ae-grid ae-grid--collapse"> 
+    <div class="ae-grid ae-grid--collapse">
         <div class="ae-grid__item item-lg-8 au-lg-ptp-1">
-           <!-- Text content -->
+            <!-- Text content -->
         </div>
         <div class="ae-grid__item item-lg-2 item-lg--offset-1">
-            <iframe src="https://yandex.ru/sprav/widget/rating-badge/1205147250" width="150" height="50" frameborder="0"></iframe>
+            <iframe src="https://yandex.ru/sprav/widget/rating-badge/1205147250" width="150" height="50"
+                frameborder="0"></iframe>
         </div>
     </div>
 

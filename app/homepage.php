@@ -9,7 +9,7 @@ class HomePage extends Controller {
 
         $f3->set('products', $db->exec('SELECT * FROM products ORDER BY id;'));
 
-        // $f3->set('sitekeywords', '');
+        // $f3->set('pagekeywords', '');
         $f3->set('menuactive', 'products');
         $f3->set('inc','portfolio.htm');
         

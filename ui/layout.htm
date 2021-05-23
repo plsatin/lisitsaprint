@@ -4,20 +4,21 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:title" content="{{ @site }}">
-    <meta property="og:image" content="{{ @siteimage }}">
-    <meta property="og:description" content="{{ @sitedescription }}">
+    <meta property="og:title" content="{{ @site }} | {{ @pagetitle }}">
+    <meta property="og:image" content="{{ @pageimage }}">
+    <meta property="og:description" content="{{ @pagedescription }}">
   
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="language" content="Russian">
-    <meta name="title" content="{{ @site }}">
-    <check if="{{ @sitekeywords != '' }}">
-        <meta name="keywords" content="{{ @sitekeywords }}">
-    </check>
-    <check if="{{ @sitedescription != '' }}">
-        <meta name="description" content="{{ @sitedescription }}">
-    </check>
+    <meta name="title" content="{{ @site }} | {{ @pagetitle }}">
     <meta name="robots" content="index, follow">
+
+<check if="{{ @pagekeywords != '' }}">
+    <meta name="keywords" content="{{ @pagekeywords }}">
+</check>
+<check if="{{ @pagedescription != '' }}">
+    <meta name="description" content="{{ @pagedescription }}">
+</check>
 
     <!-- Icons -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -34,7 +35,7 @@
     <meta name="theme-color" content="rgb(255, 165, 0)">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ @siteurl }}/assets/img/apple-touch-icon-precomposed.png">
 
-    <title>{{ @site }}</title>
+    <title>{{ @site }} | {{ @pagetitle }}</title>
 
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
@@ -66,35 +67,35 @@
             </h1>
             <nav class="rk-navigation">
                 <ul class="rk-menu">
-                    <check if="{{ @menuactive == 'products' }}">
-                        <li class="active rk-menu__item"><a href="{{ @BASE }}/products" class="rk-menu__link">Продукция</a></li>
-                        <li class="rk-menu__item"><a href="{{ @BASE }}/services" class="rk-menu__link">Услуги</a></li>
-                        <li class="rk-menu__item"><a href="{{ @BASE }}/about" class="rk-menu__link">О нас</a></li>
-                        <li class="rk-menu__item"><a href="{{ @BASE }}/contact" class="rk-menu__link">Контакты</a></li>
-                    </check>
-                    <check if="{{ @menuactive == 'services' }}">
-                        <li class="rk-menu__item"><a href="{{ @BASE }}/products" class="rk-menu__link">Продукция</a>
-                        </li>
-                        <li class="active rk-menu__item"><a href="{{ @BASE }}/services" class="rk-menu__link">Услуги</a>
-                        </li>
-                        <li class="rk-menu__item"><a href="{{ @BASE }}/about" class="rk-menu__link">О нас</a></li>
-                        <li class="rk-menu__item"><a href="{{ @BASE }}/contact" class="rk-menu__link">Контакты</a></li>
-                    </check>
-                    <check if="{{ @menuactive == 'about' }}">
-                        <li class="rk-menu__item"><a href="{{ @BASE }}/products" class="rk-menu__link">Продукция</a>
-                        </li>
-                        <li class="rk-menu__item"><a href="{{ @BASE }}/services" class="rk-menu__link">Услуги</a></li>
-                        <li class="active rk-menu__item"><a href="{{ @BASE }}/about" class="rk-menu__link">О нас</a>
-                        </li>
-                        <li class="rk-menu__item"><a href="{{ @BASE }}/contact" class="rk-menu__link">Контакты</a></li>
-                    </check>
-                    <check if="{{ @menuactive == 'contact' }}">
-                        <li class="rk-menu__item"><a href="{{ @BASE }}/products" class="rk-menu__link">Продукция</a>
-                        </li>
-                        <li class="rk-menu__item"><a href="{{ @BASE }}/services" class="rk-menu__link">Услуги</a></li>
-                        <li class="rk-menu__item"><a href="{{ @BASE }}/about" class="rk-menu__link">О нас</a></li>
-                        <li class="active rk-menu__item"><a href="{{ @BASE }}/contact" class="rk-menu__link">Контакты</a></li>
-                    </check>
+                <check if="{{ @menuactive == 'products' }}">
+                    <li class="active rk-menu__item"><a href="{{ @BASE }}/products" class="rk-menu__link">Продукция</a></li>
+                    <li class="rk-menu__item"><a href="{{ @BASE }}/services" class="rk-menu__link">Услуги</a></li>
+                    <li class="rk-menu__item"><a href="{{ @BASE }}/about" class="rk-menu__link">О нас</a></li>
+                    <li class="rk-menu__item"><a href="{{ @BASE }}/contact" class="rk-menu__link">Контакты</a></li>
+                </check>
+                <check if="{{ @menuactive == 'services' }}">
+                    <li class="rk-menu__item"><a href="{{ @BASE }}/products" class="rk-menu__link">Продукция</a>
+                    </li>
+                    <li class="active rk-menu__item"><a href="{{ @BASE }}/services" class="rk-menu__link">Услуги</a>
+                    </li>
+                    <li class="rk-menu__item"><a href="{{ @BASE }}/about" class="rk-menu__link">О нас</a></li>
+                    <li class="rk-menu__item"><a href="{{ @BASE }}/contact" class="rk-menu__link">Контакты</a></li>
+                </check>
+                <check if="{{ @menuactive == 'about' }}">
+                    <li class="rk-menu__item"><a href="{{ @BASE }}/products" class="rk-menu__link">Продукция</a>
+                    </li>
+                    <li class="rk-menu__item"><a href="{{ @BASE }}/services" class="rk-menu__link">Услуги</a></li>
+                    <li class="active rk-menu__item"><a href="{{ @BASE }}/about" class="rk-menu__link">О нас</a>
+                    </li>
+                    <li class="rk-menu__item"><a href="{{ @BASE }}/contact" class="rk-menu__link">Контакты</a></li>
+                </check>
+                <check if="{{ @menuactive == 'contact' }}">
+                    <li class="rk-menu__item"><a href="{{ @BASE }}/products" class="rk-menu__link">Продукция</a>
+                    </li>
+                    <li class="rk-menu__item"><a href="{{ @BASE }}/services" class="rk-menu__link">Услуги</a></li>
+                    <li class="rk-menu__item"><a href="{{ @BASE }}/about" class="rk-menu__link">О нас</a></li>
+                    <li class="active rk-menu__item"><a href="{{ @BASE }}/contact" class="rk-menu__link">Контакты</a></li>
+                </check>
 
                 </ul>
                 <div class="rk-search">
@@ -112,8 +113,7 @@
 
 
 
-
-    <include href="{{ @inc }}" />
+<include href="{{ @inc }}" />
 
 
 
@@ -121,18 +121,15 @@
         <div class="ae-grid ae-grid--collapse">
             <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
                 <ul class="rk-menu rk-footer-menu">
-
                     <li class="rk-menu__item"><a href="{{ @BASE }}/about" class="rk-menu__link">О нас</a></li>
                     <li class="rk-menu__item"><a href="{{ @BASE }}/contact" class="rk-menu__link">Контакты</a></li>
                     <li class="rk-menu__item"><a href="{{ @BASE }}/privacypolicy" class="rk-menu__link">Конфиденциальность</a></li>
-
                 </ul>
                 <p class="rk-footer__text rk-footer__copy "><span class="ae-u-bold">© </span><span
                         class="ae-u-bolder">2017 - 2021 {{ @company.name }}
                     </span>All Right Reserved.</p>
-                <!--<@<p class="rk-footer__text rk-footer__copy "><span class="ae-u-bold">© </span><span class="ae-u-bolder">2017 Сатин Павел</span></p>-->
+                <!-- <p class="rk-footer__text rk-footer__copy "><span class="ae-u-bold">© </span><span class="ae-u-bolder">2017 Сатин Павел</span>All Right Reserved.</p> -->
             </div>
-
 
             <div class="ae-grid__item item-lg-4 au-xs-ta-center">
                 <a href="{{ @company.facebook_lnk }}" class="rk-social-btn ">
@@ -150,12 +147,11 @@
                 </a>
             </div>
 
-
             <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
-                <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: {{ @company.email
-                        }}</span><span class="ae-u-bolder">
+                <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">
+                        </span><span class="ae-u-bolder">
                         <a href="mailto:{{ @company.email }}" class="rk-dark-color ">
-
+                            Email: {{ @company.email }}
                         </a></span></p>
                 <p class="rk-footer__text rk-footer__by">Theme by <a href="http://pixeden.com"
                         class="ae-u-bolder">Pixeden.</a></p>
@@ -165,7 +161,6 @@
 
 
     <link rel="stylesheet" href="assets/prettyPhoto/css/prettyPhoto.css">
-
 
     <script src="//maps.google.com/maps/api/js?key=AIzaSyB3UrWRY-bMsqP_-8NEdaZoh6bVP0nv0N0"></script>
 

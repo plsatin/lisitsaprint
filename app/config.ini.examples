@@ -6,9 +6,9 @@ AUTOLOAD=app/
 
 db="sqlite:db/db.sqlite"
 
-sitekeywords=""
-sitedescription=""
-siteimage=""
+pagekeywords=""
+pagedescription=""
+pageimage=""
 siteurl="https://lisitsaprint.ru"
 
 emailTo = "admin@example.com"
